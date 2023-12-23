@@ -1,0 +1,23 @@
+﻿<Window x:Class="BTL_HeThongQuanLyDuLieuThienTai.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BTL_HeThongQuanLyDuLieuThienTai"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        ResizeMode="NoResize"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1200">
+    <Grid>
+        <StackPanel Orientation="Horizontal" Height="60" Width="1200" Margin="0,65,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <Button x:Name="tb_quanlyluquet" Content="Quản lý lũ quét" Width="400" FontSize="24" FontFamily="Times New Roman" Click="tb_quanlyluquet_Click" />
+            <Button x:Name="tb_quanlybaocao" Content="Quản lý báo cáo" Width="400" FontSize="24" FontFamily="Times New Roman" Click="tb_quanlybaocao_Click" />
+            <Button x:Name="tb_quanlysatlo" Content="Quản lý sạt lở" Width="400" FontSize="24" FontFamily="Times New Roman" Click="tb_quanlysatlo_Click"/>
+        </StackPanel>
+        <Frame x:Name="Main" Margin="0,125,0,0" NavigationUIVisibility="Hidden" Navigated="Main_Navigated"/>
+        <Label Content="Hệ Thống Quản Lý Dữ Liệu Thiên Tai" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="36" FontFamily="Times New Roman" FontWeight="Bold"/>
+        <Grid Margin="0,125,0,0">
+
+        </Grid>
+    </Grid>
+</Window>
